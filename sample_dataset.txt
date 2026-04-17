@@ -1,0 +1,86 @@
+/*
+ * Sample Dataset File for Testing
+ * 
+ * This file contains example data that can be used for testing
+ * the B+ Tree Key-Value Store.
+ * 
+ * Format: key value
+ * 
+ * You can load this data using the CLI:
+ * kvstore> insert <key> <value>
+ */
+
+10 apple
+20 banana
+30 cherry
+40 date
+50 elderberry
+60 fig
+70 grape
+80 honeydew
+90 iris
+100 jackfruit
+110 kiwi
+120 lemon
+130 mango
+140 nectarine
+150 orange
+160 papaya
+170 quince
+180 raspberry
+190 strawberry
+200 tangerine
+210 ugli_fruit
+220 vanilla
+230 watermelon
+240 xigua
+250 yam
+260 zucchini_curry
+
+/* Additional test data for range queries */
+5 apricot
+15 avocado
+25 blueberry
+35 cantaloupe
+45 coconut
+55 dragonfruit
+65 eggplant
+75 grapefruit
+85 huckleberry
+95 jacaranda_fruit
+105 kumquat
+115 lime
+125 mulberry
+135 nectarine_juice
+145 olive
+155 peach
+165 pineapple
+175 pomegranate
+185 raisin
+195 star_fruit
+205 tantan_orange
+215 ume_plum
+225 verde_manzana
+235 xanadu_fruit
+245 yellow_passion_fruit
+255 zapote
+
+/* Edge cases */
+1 first_value
+1000 last_value
+333 middle_value
+999 near_last
+2 second_value
+
+/* Duplicates for testing (should update) */
+10 apple_updated
+50 elderberry_updated
+
+/*
+ * Total unique values: ~40 entries
+ * Good for testing:
+ * - Range queries: range 50 150
+ * - Updates: insert 10 "new_value"
+ * - Deletions: delete 100
+ * - Benchmarks: Use generated random data
+ */
